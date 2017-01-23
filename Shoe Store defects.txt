@@ -1,0 +1,5 @@
+Isuues
+
+1. Email text is accepting more than 50 characters, there should be certain limitations. The success message is not coming even though the user enter more than 50 characters and it's only accepting the email.
+2.Email validations should be handled by client side, but I observed it validating from server side.
+   

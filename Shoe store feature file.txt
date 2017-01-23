@@ -1,0 +1,77 @@
+Story 1: Monthly display of new releases
+
+
+Senario: Verify image for each month shoe being released
+Given: I launch shoe-store website
+When : I click on "January" Month and see show released month
+          |January|
+          |February|
+          |March   |
+          |April   |
+          |May     |
+          |June    |
+          |July    |
+          |Auguest |
+          |September |
+          |Octomber  |
+          |November  |
+          |December  |
+Then : I validate all show released month
+
+Scenario: Verify each shoe should have price pricing
+Given: I launch shoe-store website
+When : I click on "January" Month and suggested price prcing
+          |January|
+          |February|
+          |March   |
+          |April   |
+          |May     |
+          |June    |
+          |July    |
+          |Auguest |
+          |September |
+          |Octomber  |
+          |November  |
+          |December  |
+Then : I validate all suggested price pricing
+
+Below is the another way to write the scenarios:
+
+Scenario Outline: Verify image for each month shoe being released
+
+Given: I launch shoe-store website
+When : I click on <month> Month and see show released month
+          |January|
+Then : I validate all suggested price pricing
+Examples:
+          |MOnth   | 
+          |January |
+          |February|
+          |March   |
+          |April   |
+          |May     |
+          |June    |
+          |July    |
+          |Auguest |
+          |September |
+          |Octomber  |
+          |November  |
+          |December  |
+
+
+Story2: Submit email for reminder
+
+Scenario: Verify are to submit email address
+Given: I launch shoe-store website
+When : I see shoe store is displayed
+Then : I validate submit address email text box displayed
+
+
+Scenario: validate on successful submission message on shoe store site
+Given: I launch shoe-store website
+When : I see shoe store is displayed
+And : I enter valid email in text box
+And  : I click submit button
+Then: I see successfull message on shoe store site
+
+
